@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Khushi Vinaykumar Gaddam - B.Tech student at JECRC University Jaipur specializing in Artificial Intelligence, Modern Web Development, and Digital Productivity.">
+  <meta name="keywords" content="Khushi Vinaykumar, Khushi Gaddam, Portfolio, Web Developer, AI Enthusiast, B.Tech JECRC, Python, JavaScript, HTML, CSS">
+  <meta name="author" content="Khushi Vinaykumar Gaddam">
+
+  <title>Khushi Vinaykumar | B.Tech Student & AI Enthusiast</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%238b5cf6'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow blobs -->
+  <div class="glow-blob glow-1"></div>
+  <div class="glow-blob glow-2"></div>
+  <div class="glow-blob glow-3"></div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toast-message">Notification message</span>
+  </div>
+
+  <!-- ================= HEADER & NAVBAR ================= -->
+  <header class="navbar-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-symbol">&lt;K/&gt;</span>
+        <span class="logo-text">Khushi<span class="highlight-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#achievements" class="nav-link">Milestones</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Hamburger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about" class="mobile-link"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#skills" class="mobile-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li><a href="#projects" class="mobile-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+        <li><a href="#education" class="mobile-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#achievements" class="mobile-link"><i class="fa-solid fa-trophy"></i> Milestones</a></li>
+        <li><a href="#contact" class="mobile-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="mobile-socials">
+        <a href="https://www.linkedin.com/search/results/all/?keywords=KHUSHI%20VINAYKUMAR%20GADDAM" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:KHUSHI.26BCON0917@JECRCU.RDU.IN" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section" id="hero">
+      <div class="section-container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulsing-dot"></span>
+            <span>Available for Internships &amp; Projects</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <br>
+            <span class="gradient-text">Khushi Vinaykumar</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">I am a </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Passionate B.Tech student exploring the frontiers of Artificial Intelligence, Modern Web Development, and Digital Productivity. Dedicated to transforming ideas into intuitive, scalable, and impactful digital experiences.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-rocket"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+            <button class="btn btn-secondary copy-email-btn" id="hero-copy-email">
+              <i class="fa-regular fa-copy"></i> Copy Email
+            </button>
+          </div>
+
+          <div class="hero-social-strip">
+            <span class="social-label">Connect with me:</span>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/search/results/all/?keywords=KHUSHI%20VINAYKUMAR%20GADDAM" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="mailto:KHUSHI.26BCON0917@JECRCU.RDU.IN" class="social-link" title="Email Direct">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <span class="location-chip">
+                <i class="fa-solid fa-location-dot"></i> Jaipur, India
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Code Card -->
+        <div class="hero-visual">
+          <div class="code-card glass-panel">
+            <div class="code-card-header">
+              <div class="window-controls">
+                <span class="control-dot close"></span>
+                <span class="control-dot minimize"></span>
+                <span class="control-dot maximize"></span>
+              </div>
+              <div class="window-title">khushi_profile.js</div>
+              <div class="badge-pill">ES6+</div>
+            </div>
+            <div class="code-card-body">
+              <pre><code><span class="code-keyword">const</span> <span class="code-var">engineer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Khushi Vinaykumar Gaddam"</span>,
+  <span class="code-prop">institution</span>: <span class="code-string">"JECRC University Jaipur"</span>,
+  <span class="code-prop">degree</span>: <span class="code-string">"B.Tech (Undergraduate)"</span>,
+  <span class="code-prop">passions</span>: [
+    <span class="code-string">"Artificial Intelligence"</span>,
+    <span class="code-string">"Modern Web Development"</span>,
+    <span class="code-string">"Generative AI Workflows"</span>,
+    <span class="code-string">"Digital Productivity"</span>
+  ],
+  <span class="code-prop">status</span>: <span class="code-string">"Ready to Learn & Build"</span>,
+  <span class="code-func">solveProblem</span>: (<span class="code-param">curiosity</span>) => {
+    <span class="code-keyword">return</span> <span class="code-string">"Practical Software Solutions 🚀"</span>;
+  }
+};</code></pre>
+            </div>
+            <div class="code-card-footer">
+              <div class="mini-stat">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>JECRC University</span>
+              </div>
+              <div class="mini-stat">
+                <i class="fa-solid fa-brain"></i>
+                <span>AI &amp; Tech Enthusiast</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="section about-section" id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative glass-card">
+            <h3 class="narrative-heading">
+              Innovating at the intersection of <span class="gradient-text">Engineering &amp; Curiosity</span>
+            </h3>
+            <p>
+              I am an undergraduate B.Tech student at <strong>JECRC University Jaipur</strong> with a strong focus on technology, artificial intelligence, modern web development, and digital productivity.
+            </p>
+            <p>
+              My journey into technology is driven by relentless curiosity and a passion for engineering intuitive digital experiences. Whether exploring modern frontend ecosystems or experimenting with generative AI models and workflow automation, I thrive at the intersection of structured software design and creative innovation.
+            </p>
+            <p>
+              I am eager to contribute my skills to collaborative teams, learn cutting-edge industry practices, and develop software that makes a genuine difference.
+            </p>
+
+            <!-- Quick Stats Grid -->
+            <div class="stats-counter-grid">
+              <div class="stat-box">
+                <span class="stat-number">8+</span>
+                <span class="stat-label">Core Competencies</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Hands-on Projects</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">B.Tech</span>
+                <span class="stat-label">JECRC University</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">AI &amp; Web</span>
+                <span class="stat-label">Primary Focus</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interest Cards Grid -->
+          <div class="interests-grid">
+            <div class="interest-card glass-card">
+              <div class="interest-icon-wrap icon-purple">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h4>Artificial Intelligence</h4>
+              <p>Exploring machine learning foundations, intelligent algorithms, and automated cognitive systems.</p>
+            </div>
+
+            <div class="interest-card glass-card">
+              <div class="interest-icon-wrap icon-fuchsia">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <h4>Generative AI</h4>
+              <p>Harnessing LLMs, prompt engineering, and intelligent agent workflows to craft next-gen interfaces.</p>
+            </div>
+
+            <div class="interest-card glass-card">
+              <div class="interest-icon-wrap icon-blue">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h4>Modern Web Development</h4>
+              <p>Building responsive, accessible, high-performance web applications using modern web APIs and clean design.</p>
+            </div>
+
+            <div class="interest-card glass-card">
+              <div class="interest-icon-wrap icon-cyan">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <h4>Digital Productivity</h4>
+              <p>Designing smart workflows, personal knowledge management systems, and productivity suites that amplify output.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section class="section skills-section" id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">What I bring to the table</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="programming">Programming</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; Emerging Tech</button>
+          <button class="filter-btn" data-filter="productivity">Productivity</button>
+        </div>
+
+        <!-- Skills Cards Grid -->
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skill: HTML5 -->
+          <div class="skill-card glass-card" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon-box orange">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skill-meta">
+                <span class="skill-category">Web Development</span>
+                <h4 class="skill-name">HTML5</h4>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <p class="skill-desc">Semantic HTML5, accessible structure, modern forms, SEO standards, and cross-device compatibility.</p>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill orange-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: CSS3 -->
+          <div class="skill-card glass-card" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon-box blue">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="skill-meta">
+                <span class="skill-category">Web Development</span>
+                <h4 class="skill-name">CSS3</h4>
+              </div>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <p class="skill-desc">Modern CSS3, Flexbox, CSS Grid, responsive design, custom animations, transitions, and glassmorphism styling.</p>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill blue-bar" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: JavaScript -->
+          <div class="skill-card glass-card" data-category="programming web">
+            <div class="skill-header">
+              <div class="skill-icon-box yellow">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="skill-meta">
+                <span class="skill-category">Programming</span>
+                <h4 class="skill-name">JavaScript (ES6+)</h4>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <p class="skill-desc">Modern ES6+ syntax, asynchronous programming, DOM manipulation, promises, fetch APIs, and modular clean code.</p>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill yellow-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Python -->
+          <div class="skill-card glass-card" data-category="programming">
+            <div class="skill-header">
+              <div class="skill-icon-box emerald">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div class="skill-meta">
+                <span class="skill-category">Programming</span>
+                <h4 class="skill-name">Python</h4>
+              </div>
+              <span class="skill-percentage">82%</span>
+            </div>
+            <p class="skill-desc">Core Python, scripting, data handling, algorithmic problem solving, and foundations for machine learning.</p>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill emerald-bar" style="width: 82%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Artificial Intelligence -->
+          <div class="skill-card glass-card" data-category="ai">
+            <div class="skill-header">
+              <div class="skill-icon-box purple">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <div class="skill-meta">
+                <span class="skill-category">Emerging Tech</span>
+                <h4 class="skill-name">Artificial Intelligence</h4>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <p class="skill-desc">Foundational AI principles, machine learning concepts, classification, computer vision basics, and logic models.</p>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill purple-bar" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Generative AI -->
+          <div class="skill-card glass-card" data-category="ai">
+            <div class="skill-header">
+              <div class="skill-icon-box fuchsia">
+                <i class="fa-solid fa-sparkles"></i>
+              </div>
+              <div class="skill-meta">
+                <span class="skill-category">Emerging Tech</span>
+                <h4 class="skill-name">Generative AI</h4>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <p class="skill-desc">Large Language Models (LLMs), prompt engineering, AI agent workflows, embeddings, and API integrations.</p>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill fuchsia-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Modern Web Development / Frameworks -->
+          <div class="skill-card glass-card" data-category="web">
+            <div class="skill-header">
+              <div class="skill-icon-box indigo">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <div class="skill-meta">
+                <span class="skill-category">Frontend Stack</span>
+                <h4 class="skill-name">Modern Web Tech</h4>
+              </div>
+              <span class="skill-percentage">86%</span>
+            </div>
+            <p class="skill-desc">Responsive layouts, component architecture, state management, Vite tooling, and single-page apps.</p>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill indigo-bar" style="width: 86%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Digital Productivity -->
+          <div class="skill-card glass-card" data-category="productivity">
+            <div class="skill-header">
+              <div class="skill-icon-box sky">
+                <i class="fa-solid fa-bolt-lightning"></i>
+              </div>
+              <div class="skill-meta">
+                <span class="skill-category">Productivity &amp; Systems</span>
+                <h4 class="skill-name">Digital Productivity</h4>
+              </div>
+              <span class="skill-percentage">92%</span>
+            </div>
+            <p class="skill-desc">Workflow automation, personal knowledge management, Notion systems, structured time management, and Git workflows.</p>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill sky-bar" style="width: 92%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section class="section projects-section" id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">Showcase of practical work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="filter-controls">
+          <button class="proj-filter-btn active" data-pfilter="all">All Projects</button>
+          <button class="proj-filter-btn" data-pfilter="web">Web Development</button>
+          <button class="proj-filter-btn" data-pfilter="ai">Artificial Intelligence</button>
+          <button class="proj-filter-btn" data-pfilter="productivity">Productivity</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-card" data-category="web">
+            <div class="project-card-banner banner-web">
+              <div class="banner-overlay">
+                <span class="project-tag"><i class="fa-solid fa-code"></i> Web Development</span>
+                <span class="featured-badge"><i class="fa-solid fa-star"></i> Featured</span>
+              </div>
+              <div class="banner-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Personal Portfolio Website</h3>
+              <p class="project-tagline">High-performance modern portfolio showcase</p>
+              <p class="project-description">
+                A modern, responsive personal portfolio website built with HTML5, CSS3, and JavaScript. Features dark glassmorphism design, interactive filterable cards, typewriter animation, and responsive layouts.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-project="1">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-card" data-category="ai">
+            <div class="project-card-banner banner-ai">
+              <div class="banner-overlay">
+                <span class="project-tag"><i class="fa-solid fa-brain"></i> Artificial Intelligence</span>
+                <span class="featured-badge"><i class="fa-solid fa-star"></i> Featured</span>
+              </div>
+              <div class="banner-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">AI Website Project</h3>
+              <p class="project-tagline">Intelligent web experience with Generative AI</p>
+              <p class="project-description">
+                An innovative web application combining modern frontend UI with AI capabilities to deliver smart interactive assistance, dynamic content synthesis, and real-time prompt-driven workflows.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Artificial Intelligence</span>
+                <span class="tech-tag">Generative AI</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-project="2">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass-card" data-category="productivity">
+            <div class="project-card-banner banner-productivity">
+              <div class="banner-overlay">
+                <span class="project-tag"><i class="fa-solid fa-bolt"></i> Productivity</span>
+                <span class="featured-badge"><i class="fa-solid fa-star"></i> Featured</span>
+              </div>
+              <div class="banner-icon"><i class="fa-solid fa-list-check"></i></div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Student Productivity Project</h3>
+              <p class="project-tagline">Comprehensive digital workspace for students</p>
+              <p class="project-description">
+                A focused productivity suite crafted for college students to organize course schedules, track assignment deadlines, run focus study timers, and enhance academic efficiency.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">Productivity</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-project="3">
+                  <i class="fa-solid fa-circle-info"></i> View Details
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION SECTION ================= -->
+    <section class="section education-section" id="education">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">Academic foundations</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-card-container">
+          <div class="education-card glass-card">
+            <div class="edu-top">
+              <div class="edu-icon-badge">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="edu-title-wrap">
+                <span class="edu-period">Pursuing (Undergraduate)</span>
+                <h3 class="edu-degree">Bachelor of Technology (B.Tech)</h3>
+                <h4 class="edu-institution"><i class="fa-solid fa-building-columns"></i> JECRC University Jaipur</h4>
+                <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan, India</p>
+              </div>
+            </div>
+
+            <p class="edu-overview">
+              Engaged in comprehensive engineering coursework covering foundational and advanced computer science topics, modern software engineering methodologies, and hands-on technological labs.
+            </p>
+
+            <div class="edu-highlights-section">
+              <h5><i class="fa-solid fa-book-bookmark"></i> Core Learning Disciplines:</h5>
+              <div class="disciplines-grid">
+                <span class="discipline-tag"><i class="fa-solid fa-check"></i> Artificial Intelligence &amp; ML Fundamentals</span>
+                <span class="discipline-tag"><i class="fa-solid fa-check"></i> Full-Stack Web Development &amp; Responsive UI</span>
+                <span class="discipline-tag"><i class="fa-solid fa-check"></i> Data Structures, Algorithms &amp; Problem Solving</span>
+                <span class="discipline-tag"><i class="fa-solid fa-check"></i> Object-Oriented Programming (Python, JavaScript)</span>
+                <span class="discipline-tag"><i class="fa-solid fa-check"></i> Database Systems &amp; Modern Web Technologies</span>
+                <span class="discipline-tag"><i class="fa-solid fa-check"></i> Digital Productivity Frameworks &amp; Tooling</span>
+              </div>
+            </div>
+
+            <div class="edu-badges-row">
+              <span class="badge-accent"><i class="fa-solid fa-star"></i> Active participant in technical workshops &amp; hackathons</span>
+              <span class="badge-accent"><i class="fa-solid fa-award"></i> Consistent academic performance in core computing</span>
+              <span class="badge-accent"><i class="fa-solid fa-lightbulb"></i> Specialized interest in AI-augmented applications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS & MILESTONES ================= -->
+    <section class="section achievements-section" id="achievements">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">Recognitions &amp; milestones</span>
+          <h2 class="section-title">Achievements &amp; Certifications</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Certifications Card -->
+          <div class="achievement-card glass-card">
+            <div class="achieve-header blue-glow">
+              <i class="fa-solid fa-certificate achieve-icon"></i>
+              <h3>Certifications</h3>
+            </div>
+            <div class="achieve-list">
+              <div class="achieve-item">
+                <div class="achieve-bullet"></div>
+                <div>
+                  <h4 class="achieve-name">AI &amp; Machine Learning Foundations</h4>
+                  <span class="achieve-meta">Online Certification / Academy • 2025 - 2026</span>
+                  <p class="achieve-text">Grounding in machine learning algorithms, model training principles, and AI workflows.</p>
+                </div>
+              </div>
+              <div class="achieve-item">
+                <div class="achieve-bullet"></div>
+                <div>
+                  <h4 class="achieve-name">Modern Web Development Specialization</h4>
+                  <span class="achieve-meta">Frontend Developer Track • 2025</span>
+                  <p class="achieve-text">Mastery of responsive layouts, JavaScript ES6+, UI component design, and performance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hackathons Card -->
+          <div class="achievement-card glass-card">
+            <div class="achieve-header purple-glow">
+              <i class="fa-solid fa-trophy achieve-icon"></i>
+              <h3>Hackathons &amp; Sprints</h3>
+            </div>
+            <div class="achieve-list">
+              <div class="achieve-item">
+                <div class="achieve-bullet"></div>
+                <div>
+                  <h4 class="achieve-name">University Innovation Hackathon</h4>
+                  <span class="achieve-meta">JECRC University • 2025</span>
+                  <p class="achieve-text">Collaborated in an intensive sprint to prototype AI-assisted tools for student workflows.</p>
+                </div>
+              </div>
+              <div class="achieve-item">
+                <div class="achieve-bullet"></div>
+                <div>
+                  <h4 class="achieve-name">Digital Tech Sprint Challenge</h4>
+                  <span class="achieve-meta">Tech Community • 2025</span>
+                  <p class="achieve-text">Designed and presented rapid-prototype web solutions addressing real-world digital workflows.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coursework & Recognition Card -->
+          <div class="achievement-card glass-card">
+            <div class="achieve-header emerald-glow">
+              <i class="fa-solid fa-star achieve-icon"></i>
+              <h3>Recognition &amp; Training</h3>
+            </div>
+            <div class="achieve-list">
+              <div class="achieve-item">
+                <div class="achieve-bullet"></div>
+                <div>
+                  <h4 class="achieve-name">Academic Diligence Recognition</h4>
+                  <span class="achieve-meta">JECRC University • Undergraduate Years</span>
+                  <p class="achieve-text">Recognized for consistent engagement, collaborative spirit, and technological curiosity.</p>
+                </div>
+              </div>
+              <div class="achieve-item">
+                <div class="achieve-bullet"></div>
+                <div>
+                  <h4 class="achieve-name">Digital Productivity Champion</h4>
+                  <span class="achieve-meta">Peer Community • 2025</span>
+                  <p class="achieve-text">Actively shared organizational frameworks and digital workflows to empower fellow students.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">Let's connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details & Quick Links -->
+          <div class="contact-info-col glass-card">
+            <h3>Start a Conversation</h3>
+            <p class="contact-subtext">
+              I am actively seeking internship opportunities, collaborative projects, and connections with fellow developers and technology enthusiasts. Feel free to reach out anytime!
+            </p>
+
+            <div class="contact-cards-stack">
+              <!-- Email Card -->
+              <div class="info-card">
+                <div class="info-icon purple">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <span class="info-label">Direct Email</span>
+                  <a href="mailto:KHUSHI.26BCON0917@JECRCU.RDU.IN" class="info-value email-text" id="contact-email-text">
+                    KHUSHI.26BCON0917@JECRCU.RDU.IN
+                  </a>
+                </div>
+                <button class="copy-btn" id="contact-copy-btn" title="Copy Email to Clipboard">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="info-card">
+                <div class="info-icon blue">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="info-content">
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Jaipur, Rajasthan, India</span>
+                </div>
+              </div>
+
+              <!-- Institution Card -->
+              <div class="info-card">
+                <div class="info-icon emerald">
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div class="info-content">
+                  <span class="info-label">University</span>
+                  <span class="info-value">JECRC University Jaipur</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Stack -->
+            <div class="contact-social-section">
+              <span class="social-heading">Follow &amp; Connect:</span>
+              <div class="social-btn-group">
+                <a href="https://www.linkedin.com/search/results/all/?keywords=KHUSHI%20VINAYKUMAR%20GADDAM" target="_blank" rel="noopener noreferrer" class="social-btn linkedin-btn">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn github-btn">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-col glass-card">
+            <h3>Send a Message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Your Name <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="contact-name" name="name" placeholder="e.g. Alex Morgan" required>
+                </div>
+                <span class="error-msg" id="name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email Address <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="contact-email" name="email" placeholder="e.g. alex@example.com" required>
+                </div>
+                <span class="error-msg" id="email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="contact-subject" name="subject" placeholder="e.g. Internship Opportunity / Collaboration" required>
+                </div>
+                <span class="error-msg" id="subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message <span class="required">*</span></label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="fa-regular fa-comment-dots input-icon"></i>
+                  <textarea id="contact-message" name="message" rows="5" placeholder="Hi Khushi, I came across your portfolio and wanted to reach out regarding..." required></textarea>
+                </div>
+                <span class="error-msg" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
+                <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+                <span class="btn-spinner"><i class="fa-solid fa-circle-notch fa-spin"></i> Sending...</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PROJECT DETAILS MODAL ================= -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog glass-panel">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-header">
+        <span class="modal-tag" id="modal-category">Category</span>
+        <h3 class="modal-title" id="modal-title">Project Title</h3>
+        <p class="modal-tagline" id="modal-tagline">Project Tagline</p>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4>Overview</h4>
+          <p id="modal-description">Project full description.</p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Key Features &amp; Highlights</h4>
+          <ul class="modal-features-list" id="modal-features">
+            <!-- Populated dynamically via JS -->
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h4>Technologies Used</h4>
+          <div class="modal-tech-stack" id="modal-tech">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="modal-github">
+          <i class="fa-brands fa-github"></i> View Repository
+        </a>
+        <button class="btn btn-primary" id="modal-close-action">
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-symbol">&lt;K/&gt;</span>
+            <span class="logo-text">Khushi<span class="highlight-dot">.</span></span>
+          </a>
+          <p class="footer-bio">
+            B.Tech Undergraduate at JECRC University Jaipur. Crafting thoughtful technology solutions at the intersection of AI, Web Development, and Digital Productivity.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-col">
+          <h4>Connect</h4>
+          <div class="footer-social-links">
+            <a href="https://www.linkedin.com/search/results/all/?keywords=KHUSHI%20VINAYKUMAR%20GADDAM" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:KHUSHI.26BCON0917@JECRCU.RDU.IN" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+          <p class="footer-status"><i class="fa-solid fa-circle-check text-green"></i> Open to opportunities</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> Khushi Vinaykumar Gaddam. Crafted with HTML, CSS &amp; JavaScript.
+        </p>
+        <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Scroll back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
